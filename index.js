@@ -46,23 +46,12 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   (function () {
-    const allQuestions = d.getElementById("allQuestions");
-    const faqContainer = d.getElementById("faqContainer");
     const questions = d.querySelectorAll("#questions .faq__question-title");
-    if (questions && faqContainer) {
+    if (questions) {
       questions.forEach(item => {
         item.addEventListener("click", function (e) {
           item.parentElement.classList.toggle("active");
-          faqContainer.classList.add("active");
         });
-      });
-    }
-    if (allQuestions) {
-      allQuestions.addEventListener("click", function () {
-        this.remove();
-        d.querySelectorAll("#questions .faq__question").forEach(item => item.classList.add("active"));
-        document.querySelectorAll(".faq__question-show-all ~ .faq__question").forEach(item => item.classList.add("active"));
-        faqContainer.classList.add("active");
       });
     }
   })();
