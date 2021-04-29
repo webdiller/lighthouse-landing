@@ -223,6 +223,9 @@ html {
   font-size: 2.4rem;
   height: 610px;
   background-color: #eeeeee;
+  @media (max-width: 576px) {
+    height: 450px;
+  }
   &::before {
     content: "";
     position: absolute;
@@ -232,6 +235,9 @@ html {
     width: 100%;
     background-color: #d8d8dc;
     z-index: 10;
+    @media (max-width: 991px) {
+      display: none;
+    }
   }
   &__container {
     position: relative;
@@ -245,7 +251,7 @@ html {
     margin: 0 auto;
     padding: 0 20px 80px 20px;
     position: relative;
-    z-index: 100;
+    z-index: 300;
   }
   &__content {
     position: relative;
@@ -256,8 +262,13 @@ html {
     align-items: flex-end;
     max-width: 400px;
     z-index: 200;
+    @media (max-width: 991px) {
+      align-items: flex-end;
+      margin-left: auto;
+    }
   }
   &__title-header {
+    position: relative;
     display: flex;
     align-items: flex-end;
     justify-content: flex-end;
@@ -277,7 +288,13 @@ html {
     color: $accent;
     background-color: $lightBlue;
 
+    @media (max-width: 576px) {
+      font-size: 2rem;
+    }
     &-img {
+      @media (max-width: 991px) {
+        display: none;
+      }
     }
   }
   &__subtitle {
@@ -287,6 +304,13 @@ html {
     line-height: 1.2;
     text-align: right;
     margin-bottom: 40px;
+    @media (max-width: 991px) {
+      text-align: center;
+    }
+    @media (max-width: 576px) {
+      font-size: 1.8rem;
+      text-align: right;
+    }
   }
   &__title2 {
     font-size: 4.5rem;
@@ -296,6 +320,12 @@ html {
     line-height: 1;
     text-align: right;
     margin-bottom: 10px;
+    @media (max-width: 991px) {
+      font-size: 3rem;
+    }
+    @media (max-width: 576px) {
+      font-size: 2rem;
+    }
   }
   &__subtitle2 {
     font-size: 4.5rem;
@@ -304,8 +334,19 @@ html {
     line-height: 1.2;
     text-align: right;
     margin-bottom: 70px;
+    @media (max-width: 991px) {
+      font-size: 3rem;
+    }
+    @media (max-width: 576px) {
+      margin-bottom: 30px;
+      font-size: 2rem;
+    }
   }
   &__btn {
+    @media (max-width: 576px) {
+      font-size: 1.6rem;
+      padding: 0 30px;
+    }
   }
   &__overlay-text-1 {
     position: absolute;
@@ -327,6 +368,20 @@ html {
       top: 270px;
       height: 35px;
       font-size: 2rem;
+    }
+    @media (max-width: 991px) {
+      right: unset;
+      left: 100px;
+      top: unset;
+      bottom: 35px;
+    }
+    @media (max-width: 576px) {
+      font-size: 1.4rem;
+      padding: 0 5px;
+      right: unset;
+      top: unset;
+      left: 50px;
+      bottom: 40px;
     }
   }
   &__overlay-text-2 {
@@ -352,7 +407,15 @@ html {
       font-size: 2rem;
     }
     @media (max-width: 991px) {
-      left: 50px;
+      left: 25px;
+      right: unset;
+      top: unset;
+      bottom: 250px;
+    }
+    @media (max-width: 576px) {
+      bottom: 200px;
+      font-size: 1.4rem;
+      padding: 0 5px;
     }
   }
   &__obj1 {
@@ -360,6 +423,10 @@ html {
     left: 26%;
     top: 10px;
     z-index: 50;
+    @media (max-width: 576px) {
+      top: 25px;
+      left: 65px;
+    }
   }
   &__obj2 {
     position: absolute;
@@ -371,18 +438,24 @@ html {
       left: unset;
       right: 25px;
     }
+    @media (max-width: 991px) {
+      display: none;
+    }
   }
   &__obj3 {
     position: absolute;
     left: 44%;
     top: 140px;
     z-index: 50;
+    @media (max-width: 991px) {
+      display: none;
+    }
   }
   &__obj4 {
     position: absolute;
     left: 10px;
     top: 310px;
-    z-index: 50;
+    z-index: 2250;
   }
   &__bg1 {
     position: absolute;
@@ -406,6 +479,13 @@ html {
       width: 300px;
     }
     @media (max-width: 991px) {
+      top: 25px;
+      width: 250px;
+      left: 0;
+    }
+    @media (max-width: 576px) {
+      top: 50px;
+      width: 150px;
       left: 0;
     }
   }
@@ -419,12 +499,29 @@ html {
       width: 200px;
       bottom: 125px;
     }
+    @media (max-width: 991px) {
+      left: 90px;
+      bottom: 50px;
+      right: 0;
+      width: 150px;
+    }
+    @media (max-width: 576px) {
+      left: 50px;
+      bottom: 50px;
+      right: unset;
+      width: 100px;
+    }
   }
   &__bg4 {
     position: absolute;
     left: 0;
     top: -30px;
-
+    @media (max-width: 991px) {
+      left: -350px;
+    }
+    @media (max-width: 576px) {
+      left: -225px;
+    }
   }
   &__circle1 {
     position: absolute;
@@ -1330,6 +1427,7 @@ html {
     @media (max-width: 576px) {
       font-size: 1.6rem;
       height: 45px;
+      padding: 0 30px;
     }
   }
   &__circle {

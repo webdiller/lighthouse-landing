@@ -235,6 +235,12 @@ html {
   background-color: #eeeeee;
 }
 
+@media (max-width: 576px) {
+  .welcome {
+    height: 450px;
+  }
+}
+
 .welcome::before {
   content: "";
   position: absolute;
@@ -244,6 +250,12 @@ html {
   width: 100%;
   background-color: #d8d8dc;
   z-index: 10;
+}
+
+@media (max-width: 991px) {
+  .welcome::before {
+    display: none;
+  }
 }
 
 .welcome__container {
@@ -257,7 +269,7 @@ html {
   margin: 0 auto;
   padding: 0 20px 80px 20px;
   position: relative;
-  z-index: 100;
+  z-index: 300;
 }
 
 .welcome__content {
@@ -271,7 +283,15 @@ html {
   z-index: 200;
 }
 
+@media (max-width: 991px) {
+  .welcome__content {
+    align-items: flex-end;
+    margin-left: auto;
+  }
+}
+
 .welcome__title-header {
+  position: relative;
   display: flex;
   align-items: flex-end;
   justify-content: flex-end;
@@ -291,6 +311,18 @@ html {
   background-color: #b9d7de;
 }
 
+@media (max-width: 576px) {
+  .welcome__title {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 991px) {
+  .welcome__title-img {
+    display: none;
+  }
+}
+
 .welcome__subtitle {
   font-size: 2.4rem;
   color: #111111;
@@ -298,6 +330,19 @@ html {
   line-height: 1.2;
   text-align: right;
   margin-bottom: 40px;
+}
+
+@media (max-width: 991px) {
+  .welcome__subtitle {
+    text-align: center;
+  }
+}
+
+@media (max-width: 576px) {
+  .welcome__subtitle {
+    font-size: 1.8rem;
+    text-align: right;
+  }
 }
 
 .welcome__title2 {
@@ -310,6 +355,18 @@ html {
   margin-bottom: 10px;
 }
 
+@media (max-width: 991px) {
+  .welcome__title2 {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .welcome__title2 {
+    font-size: 2rem;
+  }
+}
+
 .welcome__subtitle2 {
   font-size: 4.5rem;
   color: #5fb0c2;
@@ -317,6 +374,26 @@ html {
   line-height: 1.2;
   text-align: right;
   margin-bottom: 70px;
+}
+
+@media (max-width: 991px) {
+  .welcome__subtitle2 {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .welcome__subtitle2 {
+    margin-bottom: 30px;
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .welcome__btn {
+    font-size: 1.6rem;
+    padding: 0 30px;
+  }
 }
 
 .welcome__overlay-text-1 {
@@ -340,6 +417,26 @@ html {
     top: 270px;
     height: 35px;
     font-size: 2rem;
+  }
+}
+
+@media (max-width: 991px) {
+  .welcome__overlay-text-1 {
+    right: unset;
+    left: 100px;
+    top: unset;
+    bottom: 35px;
+  }
+}
+
+@media (max-width: 576px) {
+  .welcome__overlay-text-1 {
+    font-size: 1.4rem;
+    padding: 0 5px;
+    right: unset;
+    top: unset;
+    left: 50px;
+    bottom: 40px;
   }
 }
 
@@ -369,7 +466,18 @@ html {
 
 @media (max-width: 991px) {
   .welcome__overlay-text-2 {
-    left: 50px;
+    left: 25px;
+    right: unset;
+    top: unset;
+    bottom: 250px;
+  }
+}
+
+@media (max-width: 576px) {
+  .welcome__overlay-text-2 {
+    bottom: 200px;
+    font-size: 1.4rem;
+    padding: 0 5px;
   }
 }
 
@@ -378,6 +486,13 @@ html {
   left: 26%;
   top: 10px;
   z-index: 50;
+}
+
+@media (max-width: 576px) {
+  .welcome__obj1 {
+    top: 25px;
+    left: 65px;
+  }
 }
 
 .welcome__obj2 {
@@ -395,6 +510,12 @@ html {
   }
 }
 
+@media (max-width: 991px) {
+  .welcome__obj2 {
+    display: none;
+  }
+}
+
 .welcome__obj3 {
   position: absolute;
   left: 44%;
@@ -402,11 +523,17 @@ html {
   z-index: 50;
 }
 
+@media (max-width: 991px) {
+  .welcome__obj3 {
+    display: none;
+  }
+}
+
 .welcome__obj4 {
   position: absolute;
   left: 10px;
   top: 310px;
-  z-index: 50;
+  z-index: 2250;
 }
 
 .welcome__bg1 {
@@ -444,6 +571,16 @@ html {
 
 @media (max-width: 991px) {
   .welcome__bg2 {
+    top: 25px;
+    width: 250px;
+    left: 0;
+  }
+}
+
+@media (max-width: 576px) {
+  .welcome__bg2 {
+    top: 50px;
+    width: 150px;
     left: 0;
   }
 }
@@ -463,10 +600,40 @@ html {
   }
 }
 
+@media (max-width: 991px) {
+  .welcome__bg3 {
+    left: 90px;
+    bottom: 50px;
+    right: 0;
+    width: 150px;
+  }
+}
+
+@media (max-width: 576px) {
+  .welcome__bg3 {
+    left: 50px;
+    bottom: 50px;
+    right: unset;
+    width: 100px;
+  }
+}
+
 .welcome__bg4 {
   position: absolute;
   left: 0;
   top: -30px;
+}
+
+@media (max-width: 991px) {
+  .welcome__bg4 {
+    left: -350px;
+  }
+}
+
+@media (max-width: 576px) {
+  .welcome__bg4 {
+    left: -225px;
+  }
 }
 
 .welcome__circle1 {
@@ -1581,6 +1748,7 @@ html {
   .gifts__btn {
     font-size: 1.6rem;
     height: 45px;
+    padding: 0 30px;
   }
 }
 
