@@ -172,6 +172,9 @@ html {
   text-align: center;
   position: relative;
   z-index: 1000;
+  @media (max-width: 991px) {
+    font-size: 2rem;
+  }
 }
 
 .leaf {
@@ -425,7 +428,7 @@ html {
     z-index: 10;
   }
   &__title {
-    max-width: 300px;
+    max-width: 295px;
     margin-bottom: 40px;
     font-size: 2.4rem;
     color: $accent;
@@ -610,6 +613,9 @@ html {
   }
   &__title {
     margin-bottom: 60px;
+    @media (max-width: 576px) {
+      margin-bottom: 30px;
+    }
   }
   &__content {
     max-width: 550px;
@@ -727,6 +733,9 @@ html {
   }
   &__title {
     margin-bottom: 40px;
+    @media (max-width: 576px) {
+      margin-bottom: 30px;
+    }
   }
   &__description {
     max-width: 640px;
@@ -736,15 +745,32 @@ html {
     line-height: 1.2;
     text-align: center;
     font-weight: 300;
+    @media (max-width: 991px) {
+      font-size: 1.8rem;
+    }
   }
   &__list {
     display: flex;
+    @media (max-width: 991px) {
+      flex-direction: column;
+      align-items: center;
+    }
   }
   &__item {
     position: relative;
     display: flex;
     flex: 0 1 50%;
     height: 170px;
+    @media (max-width: 991px) {
+      flex-direction: column;
+      align-items: center;
+      max-width: 400px;
+      flex: 1 1 100%;
+      margin-bottom: 50px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
   }
   &__item-img-wrapper {
     display: flex;
@@ -753,6 +779,9 @@ html {
     width: 115px;
     height: 115px;
     background-color: $lightBlue;
+    @media (max-width: 991px) {
+      margin-bottom: 15px;
+    }
   }
   &__item-img {
   }
@@ -762,6 +791,9 @@ html {
     align-items: flex-start;
     bottom: 0;
     right: 35px;
+    @media (max-width: 991px) {
+      position: static;
+    }
   }
   &__item-number {
     font-size: 8.4rem;
@@ -769,6 +801,12 @@ html {
     font-weight: 800;
     line-height: 1;
     margin-right: 15px;
+    @media (max-width: 991px) {
+      position: absolute;
+      top: 0;
+      left: 40px;
+      font-size: 4rem;
+    }
   }
   &__item-text {
     max-width: 250px;
@@ -777,6 +815,9 @@ html {
     line-height: 1.2;
     text-align: left;
     font-weight: 300;
+    @media (max-width: 991px) {
+      text-align: center;
+    }
   }
   &__obj1 {
     position: absolute;
@@ -804,6 +845,9 @@ html {
   }
   &__title {
     margin-bottom: 40px;
+    @media (max-width: 576px) {
+      margin-bottom: 30px;
+    }
   }
   &__questions {
     max-width: 600px;
@@ -819,9 +863,15 @@ html {
     line-height: 1.5;
     margin-bottom: 10px;
     cursor: pointer;
+    @media (max-width: 576px) {
+      font-size: 1.4rem;
+    }
   }
   &__question-answer {
     font-size: 1.6rem;
+    @media (max-width: 576px) {
+      font-size: 1.4rem;
+    }
     > p {
       color: rgb(43, 43, 43);
       line-height: 1.5;
@@ -831,14 +881,16 @@ html {
     }
     &_left {
       > p {
-        text-align: left;
       }
     }
   }
   &__list {
+    list-style-position: inside;
     &_parent {
-      text-align: left;
       font-weight: 300;
+      @media (max-width: 768px) {
+        padding-left: 20px;
+      }
       li {
         margin-bottom: 10px;
         line-height: 1.4;
@@ -861,6 +913,10 @@ html {
     right: 24%;
     bottom: 50px;
     z-index: 10;
+    @media (max-width: 576px) {
+      right: 5%;
+      bottom: 50px;
+    }
   }
   &__bg {
     position: absolute;
@@ -1033,10 +1089,13 @@ html {
     height: 50px;
     padding: 0 70px;
     background-color: $accent;
-    font-size: 24px;
+    font-size: 2.4rem;
     color: #fff;
     text-decoration: none;
     cursor: pointer;
+    @media (max-width: 576px) {
+      font-size: 1.6rem;
+    }
   }
   &__circle {
     position: absolute;
@@ -1052,6 +1111,10 @@ html {
     left: 8%;
     bottom: 110px;
     z-index: 10;
+    @media (max-width: 576px) {
+      left: 10px;
+      bottom: 15px;
+    }
   }
 }
 
@@ -1069,6 +1132,9 @@ html {
   }
   &__title {
     margin-bottom: 25px;
+    @media (max-width: 576px) {
+      margin-bottom: 30px;
+    }
   }
   &__list {
   }
