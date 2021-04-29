@@ -1104,6 +1104,12 @@ html {
   }
 }
 
+@media (max-width: 576px) {
+  .criteria__description {
+    font-size: 1.4rem;
+  }
+}
+
 .criteria__list {
   display: flex;
 }
@@ -1193,6 +1199,12 @@ html {
 @media (max-width: 991px) {
   .criteria__item-text {
     text-align: center;
+  }
+}
+
+@media (max-width: 576px) {
+  .criteria__item-text {
+    font-size: 1.4rem;
   }
 }
 

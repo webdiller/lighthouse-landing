@@ -895,6 +895,9 @@ html {
     @media (max-width: 991px) {
       font-size: 1.8rem;
     }
+    @media (max-width:576px) {
+      font-size: 1.4rem;
+    }
   }
   &__list {
     display: flex;
@@ -964,6 +967,9 @@ html {
     font-weight: 300;
     @media (max-width: 991px) {
       text-align: center;
+    }
+    @media (max-width:576px) {
+      font-size: 1.4rem;
     }
   }
   &__obj1 {
