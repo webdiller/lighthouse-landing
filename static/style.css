@@ -660,8 +660,19 @@ html {
 
 .way {
   position: relative;
-  font-size: 2.4rem;
   height: 700px;
+}
+
+@media (max-width: 991px) {
+  .way {
+    height: 550px;
+  }
+}
+
+@media (max-width: 576px) {
+  .way {
+    height: 350px;
+  }
 }
 
 .way__container {
@@ -677,10 +688,15 @@ html {
   z-index: 10;
 }
 
+@media (max-width: 991px) {
+  .way__container {
+    padding: 20px;
+  }
+}
+
 .way__title {
   max-width: 295px;
   margin-bottom: 40px;
-  font-size: 2.4rem;
   color: #5fb0c2;
   font-weight: bold;
   text-transform: uppercase;
@@ -690,6 +706,12 @@ html {
 
 .way__content {
   max-width: 540px;
+}
+
+@media (max-width: 991px) {
+  .way__content {
+    max-width: 400px;
+  }
 }
 
 .way__text {
@@ -750,7 +772,13 @@ html {
 
 @media (max-width: 991px) {
   .way__bg {
-    object-position: 55%;
+    object-position: 60%;
+  }
+}
+
+@media (max-width: 576px) {
+  .way__bg {
+    object-position: 65%;
   }
 }
 

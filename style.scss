@@ -549,8 +549,13 @@ html {
 
 .way {
   position: relative;
-  font-size: 2.4rem;
   height: 700px;
+  @media (max-width: 991px) {
+    height: 550px;
+  }
+  @media (max-width: 576px) {
+    height: 350px;
+  }
   &__container {
     display: flex;
     flex-direction: column;
@@ -563,11 +568,14 @@ html {
     padding: 80px 20px;
     position: relative;
     z-index: 10;
+
+    @media (max-width: 991px) {
+      padding: 20px;
+    }
   }
   &__title {
     max-width: 295px;
     margin-bottom: 40px;
-    font-size: 2.4rem;
     color: $accent;
     font-weight: bold;
     text-transform: uppercase;
@@ -576,6 +584,9 @@ html {
   }
   &__content {
     max-width: 540px;
+    @media (max-width: 991px) {
+      max-width: 400px;
+    }
   }
   &__text {
     margin-bottom: 35px;
@@ -619,7 +630,10 @@ html {
     height: 100%;
     object-fit: cover;
     @media (max-width: 991px) {
-      object-position: 55%;
+      object-position: 60%;
+    }
+    @media (max-width: 576px) {
+      object-position: 65%;
     }
   }
 }
@@ -895,7 +909,7 @@ html {
     @media (max-width: 991px) {
       font-size: 1.8rem;
     }
-    @media (max-width:576px) {
+    @media (max-width: 576px) {
       font-size: 1.4rem;
     }
   }
@@ -968,7 +982,7 @@ html {
     @media (max-width: 991px) {
       text-align: center;
     }
-    @media (max-width:576px) {
+    @media (max-width: 576px) {
       font-size: 1.4rem;
     }
   }
