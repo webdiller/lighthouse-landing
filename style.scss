@@ -245,7 +245,7 @@ html {
     margin: 0 auto;
     padding: 0 20px 80px 20px;
     position: relative;
-    z-index: 10;
+    z-index: 100;
   }
   &__content {
     position: relative;
@@ -322,6 +322,12 @@ html {
     background-color: $accent;
     color: #fff;
     font-size: 2.4rem;
+    @media (max-width: 1200px) {
+      left: 40%;
+      top: 270px;
+      height: 35px;
+      font-size: 2rem;
+    }
   }
   &__overlay-text-2 {
     position: absolute;
@@ -338,6 +344,16 @@ html {
     background-color: #f4f5f6;
     color: $accent;
     font-size: 2.4rem;
+
+    @media (max-width: 1200px) {
+      left: 15%;
+      bottom: 70px;
+      height: 35px;
+      font-size: 2rem;
+    }
+    @media (max-width: 991px) {
+      left: 50px;
+    }
   }
   &__obj1 {
     position: absolute;
@@ -349,7 +365,12 @@ html {
     position: absolute;
     left: 76%;
     top: 65px;
-    z-index: 50;
+    z-index: 200;
+    @media (max-width: 1600px) {
+      top: 25px;
+      left: unset;
+      right: 25px;
+    }
   }
   &__obj3 {
     position: absolute;
@@ -368,23 +389,42 @@ html {
     z-index: 30;
     left: -60px;
     bottom: 0;
+    @media (max-width: 1200px) {
+      left: -300px;
+    }
+    @media (max-width: 991px) {
+      display: none;
+    }
   }
   &__bg2 {
     position: absolute;
     z-index: 40;
     left: 24%;
     bottom: 50px;
+    @media (max-width: 1200px) {
+      left: 15%;
+      width: 300px;
+    }
+    @media (max-width: 991px) {
+      left: 0;
+    }
   }
   &__bg3 {
     position: absolute;
     z-index: 50;
     left: 35%;
     bottom: 25px;
+    @media (max-width: 1200px) {
+      left: 30%;
+      width: 200px;
+      bottom: 125px;
+    }
   }
   &__bg4 {
     position: absolute;
     left: 0;
     top: -30px;
+
   }
   &__circle1 {
     position: absolute;
@@ -758,7 +798,6 @@ html {
     @media (max-width: 991px) {
       font-size: 1.8rem;
     }
-    
   }
   &__list {
     display: flex;

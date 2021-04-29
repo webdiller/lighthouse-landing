@@ -257,7 +257,7 @@ html {
   margin: 0 auto;
   padding: 0 20px 80px 20px;
   position: relative;
-  z-index: 10;
+  z-index: 100;
 }
 
 .welcome__content {
@@ -334,6 +334,15 @@ html {
   font-size: 2.4rem;
 }
 
+@media (max-width: 1200px) {
+  .welcome__overlay-text-1 {
+    left: 40%;
+    top: 270px;
+    height: 35px;
+    font-size: 2rem;
+  }
+}
+
 .welcome__overlay-text-2 {
   position: absolute;
   left: 20%;
@@ -349,6 +358,21 @@ html {
   font-size: 2.4rem;
 }
 
+@media (max-width: 1200px) {
+  .welcome__overlay-text-2 {
+    left: 15%;
+    bottom: 70px;
+    height: 35px;
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 991px) {
+  .welcome__overlay-text-2 {
+    left: 50px;
+  }
+}
+
 .welcome__obj1 {
   position: absolute;
   left: 26%;
@@ -360,7 +384,15 @@ html {
   position: absolute;
   left: 76%;
   top: 65px;
-  z-index: 50;
+  z-index: 200;
+}
+
+@media (max-width: 1600px) {
+  .welcome__obj2 {
+    top: 25px;
+    left: unset;
+    right: 25px;
+  }
 }
 
 .welcome__obj3 {
@@ -384,6 +416,18 @@ html {
   bottom: 0;
 }
 
+@media (max-width: 1200px) {
+  .welcome__bg1 {
+    left: -300px;
+  }
+}
+
+@media (max-width: 991px) {
+  .welcome__bg1 {
+    display: none;
+  }
+}
+
 .welcome__bg2 {
   position: absolute;
   z-index: 40;
@@ -391,11 +435,32 @@ html {
   bottom: 50px;
 }
 
+@media (max-width: 1200px) {
+  .welcome__bg2 {
+    left: 15%;
+    width: 300px;
+  }
+}
+
+@media (max-width: 991px) {
+  .welcome__bg2 {
+    left: 0;
+  }
+}
+
 .welcome__bg3 {
   position: absolute;
   z-index: 50;
   left: 35%;
   bottom: 25px;
+}
+
+@media (max-width: 1200px) {
+  .welcome__bg3 {
+    left: 30%;
+    width: 200px;
+    bottom: 125px;
+  }
 }
 
 .welcome__bg4 {
