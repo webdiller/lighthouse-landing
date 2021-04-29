@@ -450,6 +450,9 @@ html {
       font-size: 1.8rem;
       margin-bottom: 20px;
     }
+    @media (max-width: 576px) {
+      font-size: 1.4rem;
+    }
   }
   &:last-child {
     margin-bottom: 0;
@@ -575,6 +578,7 @@ html {
 
     @media (max-width: 576px) {
       max-width: 300px;
+      font-size: 1.4rem;
     }
     u {
       text-decoration: underline;
@@ -610,6 +614,9 @@ html {
     padding: 50px 20px 45px 20px;
     position: relative;
     z-index: 10;
+    @media (max-width: 576px) {
+      height: auto;
+    }
   }
   &__title {
     margin-bottom: 60px;
@@ -634,6 +641,9 @@ html {
 
     @media (max-width: 991px) {
       font-size: 1.8rem;
+    }
+    @media (max-width: 576px) {
+      font-size: 1.4rem;
     }
 
     a {
@@ -684,7 +694,7 @@ html {
       object-position: 45%;
     }
     @media (max-width: 576px) {
-      object-position: 50%;
+      object-position: 55%;
     }
   }
   &__bg2 {
@@ -748,6 +758,7 @@ html {
     @media (max-width: 991px) {
       font-size: 1.8rem;
     }
+    
   }
   &__list {
     display: flex;
@@ -1095,6 +1106,7 @@ html {
     cursor: pointer;
     @media (max-width: 576px) {
       font-size: 1.6rem;
+      height: 45px;
     }
   }
   &__circle {
@@ -1141,6 +1153,12 @@ html {
   &__item {
     position: relative;
     display: flex;
+    @media (max-width: 991px) {
+      margin-bottom: 50px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
     &_one {
       text-align: left;
     }
@@ -1152,20 +1170,35 @@ html {
       top: -100px;
       text-align: left;
       margin-bottom: -100px;
+      @media (max-width: 991px) {
+        margin-bottom: 0;
+        top: 0;
+      }
     }
   }
   &__item-img-wrapper {
     position: relative;
     width: 50%;
     flex: 0 1 50%;
+    @media (max-width: 991px) {
+      width: 35%;
+      flex: 1 0 35%;
+      text-align: center;
+    }
     &_two {
       text-align: center;
     }
     &_three {
       left: -100px;
+      @media (max-width: 991px) {
+        left: 0;
+      }
     }
   }
   &__item-img {
+    @media (max-width: 991px) {
+      width: 70%;
+    }
   }
   &__item-obj1 {
     position: absolute;
@@ -1189,6 +1222,10 @@ html {
     width: 50%;
     flex: 0 1 50%;
     align-self: center;
+    @media (max-width: 991px) {
+      width: auto;
+      flex: 1 1 auto;
+    }
     &_one {
     }
     &_two {
@@ -1205,17 +1242,32 @@ html {
     font-size: 2.4rem;
     color: rgb(39, 39, 39);
     text-transform: uppercase;
+    @media (max-width: 991px) {
+      font-size: 1.6rem;
+      font-weight: 600;
+    }
     &_accent {
       color: $accent;
       background-color: $lightBlue;
       height: 40px;
       padding: 0 10px;
+      @media (max-width: 991px) {
+        font-size: 1.8rem;
+        font-weight: 600;
+        height: 30px;
+      }
     }
   }
   &__item-subtitle {
     margin-bottom: 25px;
     font-size: 2.4rem;
     color: rgb(39, 39, 39);
+    @media (max-width: 991px) {
+      font-size: 1.8rem;
+    }
+    @media (max-width: 576px) {
+      margin-bottom: 15px;
+    }
     b {
       font-weight: normal;
     }
@@ -1225,11 +1277,21 @@ html {
     color: #111111;
     line-height: 1.2;
     font-weight: 300;
+    @media (max-width: 576px) {
+      font-size: 1.4rem;
+    }
     b {
       font-weight: 800;
     }
   }
   &__btn {
+    @media (max-width: 991px) {
+      margin-top: 30px;
+    }
+    @media (max-width: 576px) {
+      font-size: 1.6rem;
+      height: 45px;
+    }
   }
   &__circle {
     position: absolute;
