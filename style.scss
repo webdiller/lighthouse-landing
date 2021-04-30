@@ -227,7 +227,7 @@ html {
     height: 500px;
   }
   @media (max-width: 576px) {
-    height: 400px;
+    height: 450px;
   }
   &::before {
     content: "";
@@ -238,8 +238,8 @@ html {
     width: 100%;
     background-color: #d8d8dc;
     z-index: 10;
-    @media (max-width: 991px) {
-      display: none;
+    @media (max-width: 576px) {
+      height: 120px;
     }
   }
   &__container {
@@ -269,6 +269,9 @@ html {
       align-items: flex-end;
       margin-left: auto;
     }
+    @media (max-width: 576px) {
+      margin-top: 20px;
+    }
   }
   &__title-header {
     position: relative;
@@ -276,6 +279,9 @@ html {
     align-items: flex-end;
     justify-content: flex-end;
     margin-bottom: 30px;
+    @media (max-width: 576px) {
+      margin-bottom: 15px;
+    }
   }
   &__title {
     display: inline-flex;
@@ -295,7 +301,9 @@ html {
       margin-right: 0;
     }
     @media (max-width: 576px) {
-      font-size: 1.6rem;
+      font-size: 1.4rem;
+      padding: 0 10px;
+      height: 30px;
     }
     &-img {
       @media (max-width: 991px) {
@@ -315,9 +323,10 @@ html {
       font-size: 2rem;
     }
     @media (max-width: 576px) {
-      font-size: 1.6rem;
+      font-size: 1.4rem;
       text-align: right;
-      max-width: 200px;
+      max-width: 220px;
+      margin-bottom: 15px;
     }
   }
   &__title2 {
@@ -333,6 +342,7 @@ html {
     }
     @media (max-width: 576px) {
       font-size: 2rem;
+      margin-bottom: 0;
     }
   }
   &__subtitle2 {
@@ -348,12 +358,18 @@ html {
     }
     @media (max-width: 576px) {
       font-size: 2rem;
+      margin-bottom: 15px;
     }
   }
   &__btn {
     @media (max-width: 991px) {
       font-size: 1.6rem;
       padding: 0 30px;
+    }
+    @media (max-width: 576px) {
+      font-size: 1.4rem;
+      padding: 0 15px;
+      height: 35px;
     }
   }
   &__overlay-text-1 {
@@ -387,11 +403,12 @@ html {
     }
     @media (max-width: 576px) {
       right: unset;
-      top: unset;
-      font-size: 1.4rem;
+      bottom: unset;
+      top: 275px;
+      font-size: 1.2rem;
       padding: 0 5px;
-      left: 50px;
-      bottom: 75px;
+      height: 25px;
+      left: 180px;
     }
   }
   &__overlay-text-2 {
@@ -424,10 +441,12 @@ html {
       font-size: 1.6rem;
     }
     @media (max-width: 576px) {
-      bottom: 170px;
-      font-size: 1.4rem;
+      top: 190px;
+      bottom: unset;
+      font-size: 1.2rem;
       padding: 0 5px;
-      left: 15px;
+      height: 25px;
+      left: 10px;
     }
   }
   &__obj1 {
@@ -436,8 +455,8 @@ html {
     top: 10px;
     z-index: 50;
     @media (max-width: 576px) {
-      top: 25px;
-      left: 65px;
+      top: 155px;
+      left: 105px;
     }
   }
   &__obj2 {
@@ -462,12 +481,20 @@ html {
     @media (max-width: 991px) {
       display: none;
     }
+    @media (max-width: 576px) {
+      display: block;
+      left: 85%;
+      top: 65%;
+    }
   }
   &__obj4 {
     position: absolute;
     left: 10px;
     top: 310px;
     z-index: 2250;
+    @media (max-width: 576px) {
+      display: none;
+    }
   }
   &__bg1 {
     position: absolute;
@@ -495,8 +522,13 @@ html {
       width: 250px;
       left: 0;
     }
+    @media (max-width: 768px) {
+      top: 90px;
+      width: 200px;
+      left: 0;
+    }
     @media (max-width: 576px) {
-      top: 25px;
+      top: 150px;
       width: 150px;
       left: 0;
     }
@@ -514,14 +546,14 @@ html {
     @media (max-width: 991px) {
       bottom: unset;
       right: unset;
-      left: 150px;
+      left: 165px;
       width: 150px;
       top: 60%;
       z-index: 300;
     }
     @media (max-width: 576px) {
-      left: 35px;
-      width: 90px;
+      left: 70px;
+      width: 150px;
       top: 55%;
     }
   }
@@ -533,7 +565,8 @@ html {
       left: -350px;
     }
     @media (max-width: 576px) {
-      left: -225px;
+      top: -10px;
+      left: -150px;
     }
   }
   &__circle1 {
@@ -1380,9 +1413,20 @@ html {
       left: -100px;
       @media (max-width: 991px) {
         left: 0;
+        img:first-child {
+          position: absolute;
+          top: -45px;
+          right: 35px;
+          max-width: unset;
+          width: 300px;
+        }
       }
       @media (max-width: 576px) {
         text-align: left;
+        img:first-child {
+          top: -25px;
+          right: 0;
+        }
       }
     }
   }
